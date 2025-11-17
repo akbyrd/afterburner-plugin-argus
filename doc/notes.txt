@@ -1,0 +1,108 @@
+Sample projects use MFC. Not sure if it's required though
+Probably need MSI Afterburner\SDK\Include\
+Uses shlwapi.lib
+32 bit
+Outputs a type library
+MultiThreadedDebugDLL
+What's Bscmake?
+Where will Afterburner look for plugins to load?
+Option 1 - Asus ATK Service
+	Argus is using this for CPU and T Sensor
+	Argus needs to be restarted for provider changes to take effect
+	Requires Asus software to be installed
+	AXSP / atkexComSvc
+Option 2 - Nuvoton NCT6798D
+	Doesn't look like there's a T Sensor in here
+Option 3 - Asus Embedded Controller
+	Argus automatically disables this when Asus Com Service is running
+	HWiNFO reads from the EC directly, not the service
+	Some software has warnings about the EC not being able to be read by multiple programs
+	https://nxs.re/2021/06/28/asus-ec.html
+Option 3 - Asus WMI
+
+
+C:\Program Files\ASUS\AacExtCard\AacExtHal.tlb
+C:\Program Files\ASUS\AacMB\Aac3572MbHal.tlb
+C:\Program Files\ASUS\ASUS_Aac_DRAM\Aac3572DramHal.tlb
+C:\Program Files\ASUS\KINGSTON_Aac_DRAM\AacKingstonDramHal.tlb
+
+
+
+Requirements
+------------
+|             | RTSS | HwInfo | Aida64 | After | Argus | FanCtrl | Plugins |
+| Fan control |      |        |        |       |     + |       + |         |
+| Tray icons  |      |      + |        |     + |     + |       + |         |
+| Overlay     |    + |      + |      + |       |       |         |       + |
+| API         |      |      + |        |       |     + |         |         |
+
+
+
+WMI Approach
+------------
+Use ASUSHW WMI interface
+X570 doesn't support the normal sensor interface
+Requires knowledge of I/O ports, SMBus addresses, or register locations
+Specific to EC model
+From Linux driver: "the WMI interface was incredibly slow"
+WMI appears to be removed / deprecated in newer boards
+Two approaches: WMI (older, simpler), CIM (newer)
+```
+# List all WMI objects with ASUS in the name
+Get-CimClass -namespace root/WMI | Where-Object CimClassName -Match ".*ASUS.*"
+
+# List methods on a class
+Get-CimClass -namespace root/WMI -ClassName ASUSHW | %{$_.CimClassMethods}
+
+# Invoke a method
+$asushw = Get-CimInstance -Namespace root/wmi -ClassName ASUSHW
+Invoke-CimMethod $asushw -MethodName sensor_get_version
+
+# List sensor info (assumes 32 sensors)
+0..31 | %{Invoke-CimMethod $asushw -MethodName sensor_get_info -Arguments @{Index=$_ } } | Format-Table
+
+# Update single
+%{Invoke-CimMethod $asushw -MethodName sensor_update_buffer -Arguments @{Source=2 } }
+
+# Read sensor
+%{Invoke-CimMethod $asushw -MethodName sensor_get_value -Arguments @{Index=22 } }
+```
+
+
+
+EC Approach
+-----------
+Go this route
+Mostly the only option on newer boards
+Refer to the Linux driver asus_ec_sensors.rst
+
+
+
+Argus Approach
+--------------
+Argus has a shared memory API
+Write and Afterburner plugin that reads from Argus and writes to Afterburner
+Afterburner plugins - SDK in installation directory, provides new sensors
+RTSS plugins - SDK in installation directory, customizes overlay
+
+
+
+
+Resources
+---------
+https://www.phoronix.com/news/Linux-Drop-ASUS-WMI-EC-Sensors
+https://git.kernel.org/pub/scm/linux/kernel/git/groeck/linux-staging.git/commit/?h=hwmon-next&id=1047fdb018cea2e17ed9c73e001f60d36afe2034
+https://git.kernel.org/pub/scm/linux/kernel/git/groeck/linux-staging.git/tree/Documentation/hwmon/asus_ec_sensors.rst?h=hwmon-next
+https://github.com/electrified/asus-wmi-sensors/blob/master/README.md
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/hwmon/asus_wmi_sensors.c?h=v5.17
+https://github.com/Mourdraug/FanControl.AsusWMI
+https://github.com/zeule/asus-ec-sensors
+https://maidavale.org/blog/investigating-asus-wmi-sensors-from-powershell/
+https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/pull/540
+https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/issues/533
+https://maidavale.org/blog/investigating-asus-wmi-sensors-from-powershell/
+
+https://github.com/lfreist/hwinfo
+https://github.com/HardwareMonitor/OpenHardwareMonitor
+https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+https://github.com/argotronic/argus_data_api

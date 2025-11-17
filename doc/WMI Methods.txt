@@ -1,0 +1,106 @@
+```
+Name                    ReturnType Parameters                                Qualifiers
+----                    ---------- ----------                                ----------
+initialize                 Boolean {AP_version, BIOS_version}                {Implemented, WmiMethodId}
+set_devctrl_policy         Boolean {device_control, device_id, result}       {Implemented, WmiMethodId}
+set_display                Boolean {active_display, result}                  {Implemented, WmiMethodId}
+get_display_info           Boolean {action, display_devices}                 {Implemented, WmiMethodId}
+device_ctrl                Boolean {ctrl_param, device_id}                   {Implemented, WmiMethodId}
+device_status              Boolean {device_id, ctrl_param}                   {Implemented, WmiMethodId}
+resolution                 Boolean {height_pixel, width_pixel}               {Implemented, WmiMethodId}
+set_ec_event_mode          Boolean {mode, result}                            {Implemented, WmiMethodId}
+fire_ec_event              Boolean {result}                                  {Implemented, WmiMethodId}
+GetLastError               Boolean {ErrorCode}                               {Implemented, WmiMethodId}
+GetBootOrder               Boolean {BootOrder, ErrorCode}                    {Implemented, WmiMethodId}
+SetBootOrder               Boolean {BootOrder, ErrorCode}                    {Implemented, WmiMethodId}
+GetBootOptionName          Boolean {Handle, BootOptionName, ErrorCode}       {Implemented, WmiMethodId}
+SetAdminPassword           Boolean {CurrentPassword, NewPassword, ErrorCode} {Implemented, WmiMethodId}
+SetUserPassword            Boolean {CurrentPassword, NewPassword, ErrorCode} {Implemented, WmiMethodId}
+GetLegacyBootOptionName    Boolean {Handle, BootOptionName, ErrorCode}       {Implemented, WmiMethodId}
+IsLegacyBootGroup          Boolean {Handle, ErrorCode, IsLegacyGroup}        {Implemented, WmiMethodId}
+GetLegacyBootOrder         Boolean {Handle, ErrorCode, LegacyBootOrder}      {Implemented, WmiMethodId}
+SetLegacyBootOrder         Boolean {Handle, LegacyBootOrder, ErrorCode}      {Implemented, WmiMethodId}
+SetBootOrderByGroup        Boolean {BootOrderByGroup, ErrorCode}             {Implemented, WmiMethodId}
+LoadDefaults               Boolean {ErrorCode}                               {Implemented, WmiMethodId}
+SetFastBoot                Boolean {SetValue, ErrorCode}                     {Implemented, WmiMethodId}
+SetOptionDefault           Boolean {OptionName, Value, ErrorCode}            {Implemented, WmiMethodId}
+SetFactoryTestMode         Boolean {ErrorCode}                               {Implemented, WmiMethodId}
+SetDeviceControl           Boolean {DeviceName, Value, ErrorCode}            {Implemented, WmiMethodId}
+GetFanPolicy               Boolean {FanType, ErrorCode, LowLimit, Mode…}     {Implemented, WmiMethodId}
+SetFanPolicy               Boolean {FanType, LowLimit, Mode, Profile…}       {Implemented, WmiMethodId}
+GetManualFanCurve          Boolean {FanType, Mode, ErrorCode, HighDuty…}     {Implemented, WmiMethodId}
+SetManualFanCurve          Boolean {FanType, HighDuty, HighTemp, LowDuty…}   {Implemented, WmiMethodId}
+CheckPassword              Boolean {CurrentPassword, ErrorCode}              {Implemented, WmiMethodId}
+GetOptionData              Boolean {OptionName, ErrorCode, Value}            {Implemented, WmiMethodId}
+SetOptionData              Boolean {OptionName, Value, ErrorCode}            {Implemented, WmiMethodId}
+GetEyptValue1              Boolean {EyptValue}                               {Implemented, WmiMethodId}
+GetEyptValue2              Boolean {EyptValue}                               {Implemented, WmiMethodId}
+GetEyptValue3              Boolean {EyptValue}                               {Implemented, WmiMethodId}
+GetEyptValue4              Boolean {EyptValue}                               {Implemented, WmiMethodId}
+```
+
+
+
+```
+$res = Get-CimClass -Namespace root/wmi -ClassName ASUSHW; $res.CimClassMethods
+
+Name              ReturnType Parameters                  Qualifiers
+----              ---------- ----------                  ----------
+read_smbus_byte      Boolean {cmd, slave, data, Result}  {Implemented, WmiMethodId}
+write_smbus_byte     Boolean {cmd, data, slave, Result}  {Implemented, WmiMethodId}
+read_smbus_word      Boolean {cmd, slave, data, Result}  {Implemented, WmiMethodId}
+write_smbus_word     Boolean {cmd, data, slave, Result}  {Implemented, WmiMethodId}
+read_smbus_block     Boolean {cmd, slave, data, Result}  {Implemented, WmiMethodId}
+write_smbus_block    Boolean {cmd, count, data, slave…}  {Implemented, WmiMethodId}
+asio_hw_fun07        Boolean {wPort, bData}              {Implemented, WmiMethodId}
+asio_hw_fun08        Boolean {bData, wPort}              {Implemented, WmiMethodId}
+asio_hw_fun42        Boolean {wPort, wData}              {Implemented, WmiMethodId}
+asio_hw_fun43        Boolean {wData, wPort}              {Implemented, WmiMethodId}
+asio_hw_fun44        Boolean {wPort, dwData}             {Implemented, WmiMethodId}
+asio_hw_fun45        Boolean {dwData, wPort}             {Implemented, WmiMethodId}
+asio_hw_fun09        Boolean {dwAddr, Width, dwData}     {Implemented, WmiMethodId}
+asio_hw_fun10        Boolean {dwAddr, dwData, Width}     {Implemented, WmiMethodId}
+asio_hw_fun11        Boolean {Bus, Dev, Func, Reg…}      {Implemented, WmiMethodId}
+asio_hw_fun12        Boolean {Bus, Dev, dwData, Func…}   {Implemented, WmiMethodId}
+asio_hw_fun13        Boolean {Index, wIndexPort, Data}   {Implemented, WmiMethodId}
+asio_hw_fun14        Boolean {Data, Index, wIndexPort}   {Implemented, WmiMethodId}
+asio_hw_fun15        Boolean {Index, DataHi, DataLo}     {Implemented, WmiMethodId}
+asio_hw_fun16        Boolean {DataHi, DataLo, Index}     {Implemented, WmiMethodId}
+asio_hw_fun17        Boolean {Index, Eax, Ebx, Ecx…}     {Implemented, WmiMethodId}
+asio_hw_fun28        Boolean {Index, Data}               {Implemented, WmiMethodId}
+asio_hw_fun29        Boolean {Data, Index}               {Implemented, WmiMethodId}
+asio_hw_fun19        Boolean {Index, LDN, Data}          {Implemented, WmiMethodId}
+asio_hw_fun20        Boolean {Data, Index, LDN}          {Implemented, WmiMethodId}
+asio_hw_fun21        Boolean {Bank, Index, Data}         {Implemented, WmiMethodId}
+asio_hw_fun22        Boolean {Bank, Data, Index}         {Implemented, WmiMethodId}
+asio_hw_fun46        Boolean {LdnIndexArray, DataArray}  {Implemented, WmiMethodId}
+asio_hw_fun47        Boolean {LdnIndexDataArray}         {Implemented, WmiMethodId}
+asio_hw_fun23        Boolean {BankIndexArray, DataArray} {Implemented, WmiMethodId}
+asio_hw_fun24        Boolean {BankIndexDataArray}        {Implemented, WmiMethodId}
+asio_hw_fun25        Boolean {BankIndexArray, DataArray} {Implemented, WmiMethodId}
+asio_hw_fun26        Boolean {BankIndexDataArray}        {Implemented, WmiMethodId}
+```
+
+
+
+```
+$res = Get-CimClass -Namespace root/wmi -ClassName AsusWpbtWmi; $res.CimClassMethods
+
+Name            ReturnType Parameters   Qualifiers
+----            ---------- ----------   ----------
+get_wpbt_status    Boolean {ctrl_param} {Implemented, WmiMethodId}
+```
+
+
+
+```
+$res = Get-CimClass -Namespace root/wmi -ClassName AsusBackupWmi; $res.CimClassMethods
+
+Name               ReturnType Parameters                      Qualifiers
+----               ---------- ----------                      ----------
+BackupDataAccess      Boolean {Status}                        {Implemented, WmiMethodId}
+GetBackupDataPoint    Boolean {pBuffer}                       {Implemented, WmiMethodId}
+SystemConfig          Boolean {DataSig, Func, Sig, ErrorCode} {Implemented, WmiMethodId}
+SetBufferData         Boolean {Data0, Index}                  {Implemented, WmiMethodId}
+GetBufferData         Boolean {Index, DataN}                  {Implemented, WmiMethodId}
+```

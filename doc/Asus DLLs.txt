@@ -1,0 +1,373 @@
+C:\Program Files (x86)\ASUS\AI Suite III\aaHMLib.dll
+C:\Program Files (x86)\ASUS\AI Suite III\ACPIWMI.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsAcpi.dll
+C:\Program Files (x86)\ASUS\AI Suite III\asacpiex.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsIO.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsMultiLang.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\aaHMLib.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\AsAcpi.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\asacpiex.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\concrt140d.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\D3Dcompiler_47.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\iconengines\qsvgicond.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\imageformats\qgifd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\imageformats\qicnsd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\imageformats\qicod.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\imageformats\qjpegd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\imageformats\qsvgd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\imageformats\qtgad.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\imageformats\qtiffd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\imageformats\qwbmpd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\imageformats\qwebpd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\libEGLd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\libGLESV2d.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\msvcp140d.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\opengl32sw.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\platforms\qwindowsd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\Qt5Cored.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\Qt5Guid.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\Qt5Svgd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\Qt5Widgetsd.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\Qt5Xmld.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\styles\qwindowsvistastyled.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\ucrtbased.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\vccorlib140d.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsPowerBar\vcruntime140d.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AssistFunc.dll
+C:\Program Files (x86)\ASUS\AI Suite III\AsTaskSched.dll
+C:\Program Files (x86)\ASUS\AI Suite III\CloseExe.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\AsAcpi.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\asacpiEx.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\AsMultiLang.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\AsTaskSched.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\CCT\Z370\cctDll.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\CCT\Z390\cctDll.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\Device.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\dip4.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIP4FanCalibration.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\AppTuneDll.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\AsAcpi.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\asacpiEx.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\AsKeyboardFocusHooker.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\cctDll.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\DIPDLL\DIP4cTDPAction.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\DIPDLL\DIP4DIGIPowerControlAction.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\DIPDLL\DIP4EpuAction.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\DIPDLL\DIP4FanAction.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\DIPDLL\DIP4TurboVEVOAction.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\DIPDLL\UsbPowerManager.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\FanInfofromProtocol.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\IccHelper.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\IccHelperSkylake.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\IccToolHelper.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\DIPAwayMode\TurboAppDatabase.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\EPU.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\FAN.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\FanInfofromProtocol.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\IccHelper.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\IccHelperSkylake.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\IccToolHelper.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\idti_old.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\idti.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\IntWdt.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\IShellItemImageFactory.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\log4cxx.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\Log4cxxWrapper.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\msvcp140.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\OcMailbox.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\Platform.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\SystemCleaner.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\TurboAppDatabase.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\vcruntime140.dll
+C:\Program Files (x86)\ASUS\AI Suite III\DIP4\VgaFanCalibration.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EIO.dll
+C:\Program Files (x86)\ASUS\AI Suite III\Exeio.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\AsMultiLang.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\AsTaskSched.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\ASUS Update\AsFtp.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\ASUS Update\AsIdxParser.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\ASUS Update\AsIO.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\ASUS Update\AsMultiLang.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\ASUS Update\AsZip.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\ASUS Update\COMPALINFO.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\ASUS Update\PEInfo.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\ASUS Update\Update.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\EasyUpdt.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\EzULIB.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\ImageHelper.dll
+C:\Program Files (x86)\ASUS\AI Suite III\EZ Update\UIImprovmentHelper.dll
+C:\Program Files (x86)\ASUS\AI Suite III\ImageHelper.dll
+C:\Program Files (x86)\ASUS\AI Suite III\log4cxx.dll
+C:\Program Files (x86)\ASUS\AI Suite III\Log4cxxWrapper.dll
+C:\Program Files (x86)\ASUS\AI Suite III\pngio.dll
+C:\Program Files (x86)\ASUS\AI Suite III\SIOLED\SIORGB.dll
+C:\Program Files (x86)\ASUS\AI Suite III\System Information\AsMultiLang.dll
+C:\Program Files (x86)\ASUS\AI Suite III\System Information\cpuidsdk.dll
+C:\Program Files (x86)\ASUS\AI Suite III\System Information\SPDInfoV2.dll
+C:\Program Files (x86)\ASUS\AI Suite III\System Information\SystemInfo.dll
+C:\Program Files (x86)\ASUS\AI Suite III\Vender.dll
+C:\Program Files (x86)\ASUS\AI Suite III\Version\Version.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\ACLOGGER.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\INIFileParser.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\ja\System.Runtime.WindowsRuntime.resources.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\ja\System.Runtime.WindowsRuntime.UI.Xaml.resources.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.Buffers.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.Memory.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.Numerics.Vectors.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.Runtime.CompilerServices.Unsafe.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.Runtime.WindowsRuntime.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.Runtime.WindowsRuntime.UI.Xaml.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.Text.Encodings.Web.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.Text.Json.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.Threading.Tasks.Extensions.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\System.ValueTuple.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\websocket-sharp.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\zh-Hant\System.Runtime.WindowsRuntime.resources.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AcPowerNotification\zh-Hant\System.Runtime.WindowsRuntime.UI.Xaml.resources.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AIOFanSDK\ArmouryAIOSDK.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AIOFanSDK\InstallHelper.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AIOFanSDK\libcrypto-1_1-x64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AIOFanSDK\libcurl.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AIOFanSDK\LIBEAY32.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AIOFanSDK\libssl-1_1-x64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AIOFanSDK\SSLEAY32.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AIOFanSDK\Tools\AsTaskSched.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\AIOFanSDK\zlib1.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ArmourySDK.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ArmourySocketServer\AuraIC_x64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ArmourySocketServer\libcrypto-1_1-x64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ArmourySocketServer\libssl-1_1-x64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ArmourySocketServer\WebView2Loader.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ArmourySocketServer\zlibwapi.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\FilterDriver\AsFilterDriver.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\FilterDriver\x64\Win10\ROGMS\AsusLiveUpdateDeEncrypt.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\FilterDriver\x64\Win10\ROGMS\AsZip.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\FilterDriver\x64\Win10\ROGMS\EzULIB_UFB.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\FilterDriver\x64\Win11\ROGMS\AsusLiveUpdateDeEncrypt.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\FilterDriver\x64\Win11\ROGMS\AsZip.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\FilterDriver\x64\Win11\ROGMS\EzULIB_UFB.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\InstallHelper.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\A110402.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\A120002.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\ArmouryMBLedSDK.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\ASIO3Package\AsIO3_32.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\ASIO3Package\AsIO3_64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\dnnl.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\gna.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\gna2_runner.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\iGoAudAgent.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\igoAudSessionMonitor.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\InstallHelper.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\libcrypto-1_1-x64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\libmmd.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\libssl-1_1-x64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\NoiseCancelingLib.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\portaudio_x64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\svml_dispmd.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\MBLedSDK\Tools\AsTaskSched.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\Schedule\AsTaskSched.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ShareFromArmouryIII\Mouse\ROG Strix Impact\Upgrade_P303\SnxHidLib.DLL
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ShareFromArmouryIII\Mouse\TUF GAMING M3\Upgrade_P305\Common.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ShareFromArmouryIII\Mouse\TUF GAMING M3\Upgrade_P305\CyUSB.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ShareFromArmouryIII\Mouse\TUF GAMING P308\Upgrade_P305\Common.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\ShareFromArmouryIII\Mouse\TUF GAMING P308\Upgrade_P305\CyUSB.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\SwAgent\AcSwFuncSupportTools.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\SwAgent\AsAcpi.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\SwAgent\asacpiEx.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\SwAgent\FanOSD\AsMultiLang.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\SwAgent\Interop.IWshRuntimeLibrary.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\SwAgent\MacroControl.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\SwAgent\mute.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\SwAgent\ScreenColorLib.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\Tools\AsTaskSched.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\dll\WindowID\WindowID.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\ssl\openssl\libcrypto-1_1-x64.dll
+C:\Program Files (x86)\ASUS\ArmouryDevice\ssl\openssl\libssl-1_1-x64.dll
+C:\Program Files (x86)\ASUS\ASIO3\AsIO3_32.dll
+C:\Program Files (x86)\ASUS\ASIO3\AsIO3_64.dll
+C:\Program Files (x86)\ASUS\AsSysCtrlService\1.00.25\AsAcpi.dll
+C:\Program Files (x86)\ASUS\AsSysCtrlService\1.00.25\asacpiex.dll
+C:\Program Files (x86)\ASUS\AsSysCtrlService\1.00.25\AsSysCtrlSrvcHelp.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.01.13\ACPIWMI.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.01.13\AsAcpi.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.01.13\asacpiex.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.01.13\ASUS_WMI.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.01.13\libprotobufd.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.01.13\libprotocd.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.01.13\msvcp140d.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.01.13\ucrtbased.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.01.13\vcruntime140d.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\ACPIWMI.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\AsAcpi.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\asacpiex.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\ASUS_WMI.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\cpuidsdk.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\cpuidsdk64.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\libprotobufd.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\libprotocd.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\msvcp140d.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\ucrtbased.dll
+C:\Program Files (x86)\ASUS\AsusFanControlService\2.03.08\vcruntime140d.dll
+C:\Program Files (x86)\ASUS\AsusGamingCenterInstallPackage\EzULIB.dll
+C:\Program Files (x86)\ASUS\AURA lighting effect add-on\AuraLayerManager.dll
+C:\Program Files (x86)\ASUS\AURA lighting effect add-on\bass.dll
+C:\Program Files (x86)\ASUS\AURA lighting effect add-on\Bass.Net.dll
+C:\Program Files (x86)\ASUS\AURA lighting effect add-on\basswasapi.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.12\AsIO.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.12\ASUS_WMI.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.12\ATKEX.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.12\cpuutil_o.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.12\cpuutil.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.12\InstallAtk.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.12\PEbiosinterface32.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.15\AsIO.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.15\ASUS_WMI.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.15\ATKEX.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.15\cpuutil_o.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.15\cpuutil.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.15\InstallAtk.dll
+C:\Program Files (x86)\ASUS\AXSP\4.02.15\PEbiosinterface32.dll
+C:\Program Files (x86)\ASUS\GameSDK Service\cpprest141_2_10.dll
+C:\Program Files (x86)\ASUS\Grid\EzULIB.dll
+C:\Program Files (x86)\ASUS\RLSDownload\ALL MB\4_HAL\12560\AacAIOFanSetup\Hal\AXSP\AsIO.dll
+C:\Program Files (x86)\ASUS\RLSDownload\ALL MB\4_HAL\12560\AacAIOFanSetup\Hal\AXSP\ASUS_WMI.dll
+C:\Program Files (x86)\ASUS\RLSDownload\ALL MB\4_HAL\12560\AacAIOFanSetup\Hal\AXSP\ATKEX.dll
+C:\Program Files (x86)\ASUS\RLSDownload\ALL MB\4_HAL\12560\AacAIOFanSetup\Hal\AXSP\cpuutil_o.dll
+C:\Program Files (x86)\ASUS\RLSDownload\ALL MB\4_HAL\12560\AacAIOFanSetup\Hal\AXSP\cpuutil.dll
+C:\Program Files (x86)\ASUS\RLSDownload\ALL MB\4_HAL\12560\AacAIOFanSetup\Hal\AXSP\InstallAtk.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\AsIO.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\ATKEX.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\cpprest140_2_9.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\DeviceHalDetect.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\DeviceVBIOSDetect.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\GamingNBFWVersion.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\PEbiosinterface32.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\syncas.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\vga\EIO_x64.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\vga\Exeio_x64.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\vga\LED_DLL_forMB_User_x64.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\vga\LED_DLL_forMB_x64.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\vga\Vender_x64.dll
+C:\Program Files (x86)\ASUS\ROG Live Service\vga\VGA_Extra_x64.dll
+C:\Program Files (x86)\ASUS\ROGLiveServicePackage\ProductLineCheck.dll
+C:\Program Files (x86)\ASUS\ROGLSLoader\AsZip.dll
+C:\Program Files (x86)\ASUS\ROGLSLoader\BIOSInfoLib.dll
+C:\Program Files (x86)\ASUS\ROGLSLoader\concrt140.dll
+C:\Program Files (x86)\ASUS\ROGLSLoader\cpprest140_2_9.dll
+C:\Program Files (x86)\ASUS\ROGLSLoader\msvcp140.dll
+C:\Program Files (x86)\ASUS\ROGLSLoader\vcruntime140.dll
+C:\Program Files (x86)\ASUS\Update\1.3.107.83\asupdate.dll
+C:\Program Files (x86)\ASUS\Update\1.3.107.83\NLog.dll
+C:\Program Files (x86)\ASUS\Update\1.3.107.83\psmachine_64.dll
+C:\Program Files (x86)\ASUS\Update\1.3.107.83\psmachine.dll
+C:\Program Files (x86)\ASUS\Update\1.3.107.83\psuser_64.dll
+C:\Program Files (x86)\ASUS\Update\1.3.107.83\psuser.dll
+C:\Program Files (x86)\ASUS\VGA COM\2.00.07\AsusGpuTweak.dll
+C:\Program Files (x86)\ASUS\VGA COM\2.00.07\EIO.dll
+C:\Program Files (x86)\ASUS\VGA COM\2.00.07\Exeio.dll
+C:\Program Files (x86)\ASUS\VGA COM\2.00.07\Vender.dll
+C:\Program Files (x86)\ASUS>dir /s /b /o *.dll
+C:\Program Files\ASUS\AacVGAHal\AacVgaHal_x64.dll
+C:\Program Files\ASUS\AacVGAHal\AacVgaHal.dll
+C:\Program Files\ASUS\AacVGAHal\LED_DLL_forMB_User_x64.dll
+C:\Program Files\ASUS\AacVGAHal\LED_DLL_forMB_User.dll
+C:\Program Files\ASUS\AacVGAHal\LED_DLL_forMB_x64.dll
+C:\Program Files\ASUS\AacVGAHal\LED_DLL_forMB.dll
+C:\Program Files\ASUS\AacVGAHal\Vender_x64.dll
+C:\Program Files\ASUS\AacVGAHal\Vender.dll
+C:\Program Files\ASUS\AacVGAHal\VGA_Extra_x64.dll
+C:\Program Files\ASUS\AacVGAHal\VGA_Extra.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\AC_FDSPlugin\AC_FDSPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ACStorePlugin\ACStorePlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ArmouryCrate.Toolkit.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\AuraPlugIn\ACPIWMI.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\AuraPlugIn\AuraPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\AuraPlugIn\Hook.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\AuraPlugIn\libzmq.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\AuraPlugIn\msvcp140_atomic_wait.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\BIOSInfoLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\DeviceServicePlugIn\DeviceServicePlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\DeviceServicePlugIn\zlibwapi.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\DiagnosisHelper.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\FreeUpMemoryPlugin\AsProcessHelper.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\FreeUpMemoryPlugin\CLI_Wrapper.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\FreeUpMemoryPlugin\ConfigEditorCS.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\FreeUpMemoryPlugin\FreeUpMemoryPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\GameBoxPlugIn\AsControlHelper.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\GameBoxPlugIn\AsEncryptHelper.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\GameBoxPlugIn\GameBoxPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\GameBoxPlugIn\System.IO.Compression.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\GameBoxPlugIn\System.IO.Compression.FileSystem.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\GameLibraryPlugIn\GameLibraryPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\GridPlugin\Grid\EzULIB.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\GridPlugin\GridPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\CPUManufacturerCmdLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\CPUTypeCmdLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\DIMMCapacityLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\DiskMediaTypeLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\DRAMManufacturerLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\DRAMSpeedLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\HardDiskCapacityLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\HWComponentPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\libusb-1.0.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\msvcp140d.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\NICInfoLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\USBInfoLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\vcruntime140_1.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\vcruntime140_1d.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\vcruntime140d.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\VGAManufacturerLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\VGATypeLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\HWComponentPlugin\VideoMemoryLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MacroKeyPlugin\MacroKeyPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\aaHMLib_x64.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\aaHMLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AIControlLib.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\ASIO3\AsIO3_32.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\ASIO3\AsIO3_64.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\ACPIWMI.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\AsAcpi.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\asacpiex.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\ASUS_WMI.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\cpuidsdk.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\cpuidsdk64.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\libprotobufd.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\libprotocd.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\msvcp140d.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\ucrtbased.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AsusFanCtrlSvc\vcruntime140d.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AXSP\AsIO.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AXSP\ASUS_WMI.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AXSP\ATKEX.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AXSP\cpuutil_o.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AXSP\cpuutil.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\AXSP\InstallAtk.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\cpuidsdk.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\cpuidsdk64.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\FAN.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\MB_Home.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\MB_Home\OPHWInfo.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ScenarioProfilePlugin\CLI_Wrapper_ScenarioProfile.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ScenarioProfilePlugin\ConfigXML_ScenarioProfile.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ScenarioProfilePlugin\ScenarioProfilePlugIn.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ScenarioProfilePlugin\System.IO.Compression.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ScenarioProfilePlugin\System.IO.Compression.FileSystem.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ScenarioProfilePlugin\WebSocketClient\libcrypto-1_1-x64.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ScenarioProfilePlugin\WebSocketClient\libssl-1_1-x64.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ScenarioProfilePlugin\WebSocketClient\WebSocketClient.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ServiceCore.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\ServiceTcpStream.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\System.Runtime.WindowsRuntime.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\UserCenterPlugin\UserCenterPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\UserExperienceImprovementPlugin\AsEncryptHelper.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\UserExperienceImprovementPlugin\AsSQLHelper.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\UserExperienceImprovementPlugin\httputility.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\UserExperienceImprovementPlugin\UserExperienceImprovementPlugin.dll
+C:\Program Files\ASUS\ARMOURY CRATE Lite Service\vcruntime140_1.dll
+C:\Program Files\ASUS\AURA lighting effect add-on x64\AuraLayerManager.dll
+C:\Program Files\ASUS\AURA lighting effect add-on x64\bass.dll
+C:\Program Files\ASUS\AURA lighting effect add-on x64\Bass.Net.dll
+C:\Program Files\ASUS\AURA lighting effect add-on x64\basswasapi.dll
+C:\Program Files\ASUS\AuraSDK\AuraSdk_x64.dll
+C:\Program Files\ASUS\AuraSDK\AuraSdk_x86.dll

@@ -1,0 +1,25 @@
+Item                       Version
+----                       -------
+Armoury Crate UWP App      5.2.12.0
+ROG Live Service           1.5.10.0
+Aura Service (Lighting Service)  3.05.66
+Armoury Crate lite service  5.2.10
+Aura Wallpaper Service     Not installed
+ASUS AURA Extension Card HAL  1.1.0.18
+ASUS AURA Motherboard HAL  1.3.4.0
+AacVGA                     0.0.4.3
+KingstonDram               1.1.12
+AURA DRAM Component        1.1.18
+ENE RGB HAL                1.1.39.18
+ENE_EHD_M2_HAL             1.0.9.12
+PHISON HAL                 1.0.9.0
+Patriot Viper DRAM RGB     1.0.9.4
+Patriot Viper M2 SSD RGB   1.1.0.2
+Universal Holtek RGB DRAM  1.0.0.3
+WD_BLACK AN1500            1.0.14.0
+
+x570 Device SDK
+GameSDK Device SDK
+Addressable LED Strip Aura Kit
+Check exported symbols
+Contact customer service
