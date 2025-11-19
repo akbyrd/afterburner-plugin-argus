@@ -4,7 +4,6 @@
 #include <argus/argus_monitor_data_api.h>
 #include <msi/MAHMSharedMemory.h>
 #include <msi/MSIAfterburnerMonitoringSourceDesc.h>
-#include <thread>
 
 using namespace argus_monitor::data_api;
 
@@ -13,8 +12,8 @@ using namespace argus_monitor::data_api;
 
 using b8 = bool;
 using f32 = float;
-using i32 = int32_t;
-using u32 = uint32_t;
+using i32 = int;
+using u32 = unsigned int;
 
 template <typename TLambda>
 struct Defer
@@ -52,10 +51,10 @@ struct ArgusState
 
 struct ThreadState
 {
-	bool                          poll             = false;
-	bool                          dataAvailable    = false;
+	b8                            poll             = false;
+	b8                            dataAvailable    = false;
 	u32                           lastCycleCounter = 0;
-	std::thread                   thread           = {};
+	HANDLE                        thread           = nullptr;
 	const ArgusMonitorSensorData* waterSensor      = nullptr;
 };
 
@@ -75,7 +74,7 @@ static void Argus_Deinit(ArgusState& s);
 static b8
 Argus_Init(ArgusState& s)
 {
-	bool success = false;
+	b8 success = false;
 	defer { if (!success) Argus_Deinit(s); };
 
 	DWORD flags = FILE_MAP_READ;
@@ -84,7 +83,7 @@ Argus_Init(ArgusState& s)
 
 	const void* data = MapViewOfFile(s.file, flags, 0, 0, kMappingSize());
 	if (!data) return false;
-	s.data = reinterpret_cast<const ArgusMonitorData*>(data);
+	s.data = static_cast<const ArgusMonitorData*>(data);
 
 	s.dataMutex = OpenMutexW(READ_CONTROL | MUTANT_QUERY_STATE | SYNCHRONIZE, FALSE, kMutexName());
 	if (!s.dataMutex) return false;
@@ -112,20 +111,36 @@ Argus_Deinit(ArgusState& s)
 // -------------------------------------------------------------------------------------------------
 // Argus - Afterburner Integration
 
-static void Argus_Thread_Update(ThreadState* ts, ArgusState* s);
+static DWORD WINAPI Argus_Thread_Update(void* lpParam);
+static void Argus_Thread_Deinit(ThreadState& ts, ArgusState& as);
 
-static void
+static b8
 Argus_Thread_Init(ThreadState& ts, ArgusState& as)
 {
+	b8 success = false;
+	defer { if (!success) Argus_Thread_Deinit(ts, as); };
+
 	ts.poll = true;
-	ts.thread = std::thread{ &Argus_Thread_Update, &ts, &as };
+	ts.thread = CreateThread(
+		nullptr,
+		0,
+		static_cast<LPTHREAD_START_ROUTINE>(Argus_Thread_Update),
+		&state,
+		0,
+		nullptr
+	);
+	if (!ts.thread) return false;
+
+	success = true;
+	return true;
 }
 
-static void
-Argus_Thread_Update(ThreadState* _ts, ArgusState* _as)
+static DWORD WINAPI
+Argus_Thread_Update(void* lpParam)
 {
-	ThreadState& ts = *_ts;
-	ArgusState& as = *_as;
+	State* s = static_cast<State*>(lpParam);
+	ThreadState& ts = s->thread;
+	ArgusState& as = s->argus;
 
 	// NOTE: Reading from the poll flag is intentionally unsynchronized. There are no other writes
 	// the polling thread depends on.
@@ -176,6 +191,8 @@ Argus_Thread_Update(ThreadState* _ts, ArgusState* _as)
 		//   sensor may be wrong. We detect this by watching for the CycleCounter jumping backwards to
 		//   a lower value.
 	}
+
+	return 0;
 }
 
 static void
@@ -184,11 +201,11 @@ Argus_Thread_Deinit(ThreadState& ts, ArgusState& as)
 	// NOTE: Writing to the poll flag is intentionally unsynchronized. There are no other writes the
 	// polling thread depends on.
 	ts.poll = false;
-	ts.thread.join();
+	WaitForSingleObject(ts.thread, INFINITE);
+	CloseHandle(ts.thread);
+	ts = {};
 
 	Argus_Deinit(as);
-
-	ts = {};
 }
 
 // -------------------------------------------------------------------------------------------------
@@ -209,6 +226,9 @@ GetSourcesNum()
 extern "C" __declspec(dllexport) BOOL
 GetSourceDesc(DWORD dwIndex, LPMONITORING_SOURCE_DESC pDesc)
 {
+	(void) dwIndex;
+
+	// NOTE: Afterburner appears to use the Windows-1252 codepage instead of UTF-8
 	*pDesc = MONITORING_SOURCE_DESC {
 		.dwVersion       = pDesc->dwVersion,
 		.szName          = "T Sensor",
@@ -228,6 +248,8 @@ GetSourceDesc(DWORD dwIndex, LPMONITORING_SOURCE_DESC pDesc)
 extern "C" __declspec(dllexport) FLOAT
 GetSourceData(DWORD dwIndex)
 {
+	(void) dwIndex;
+
 	// NOTE: Reading from the water sensor is intentionally unsynchronized. We can't have a torn
 	// read since it lives on a single cache line.
 	if (state.thread.waterSensor && state.thread.waterSensor->Value)
@@ -243,19 +265,23 @@ GetSourceData(DWORD dwIndex)
 extern "C" BOOL WINAPI
 DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 {
+	(void) hInstance;
+	(void) lpReserved;
+
 	switch (dwReason)
 	{
 		case DLL_PROCESS_ATTACH:
-			Argus_Thread_Init(state.thread, state.argus);
+			if (!Argus_Thread_Init(state.thread, state.argus))
+				return FALSE;
 			break;
 
 		case DLL_PROCESS_DETACH:
 			Argus_Thread_Deinit(state.thread, state.argus);
 			break;
 	}
+
 	return TRUE;
 }
 
-// TODO: Enable warnings
-// TODO: Switch to windows thread
 // TODO: Figure out where the plugin description and setup comes from (MFC extension framework thingy?)
+// TODO: Argus_Thread_Init/Deinit run on the main thread and Argus_Thread_Update runs on the polling thread. This is confusing.
