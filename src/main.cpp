@@ -194,6 +194,12 @@ Argus_Thread_Deinit(ThreadState& ts, ArgusState& as)
 // -------------------------------------------------------------------------------------------------
 // Plugin API
 
+//extern "C" __declspec(dllexport) BOOL
+//SetupSource(DWORD dwIndex, HWND hWnd)
+
+//extern "C" __declspec(dllexport) void
+//Uninit()
+
 extern "C" __declspec(dllexport) DWORD
 GetSourcesNum()
 {
