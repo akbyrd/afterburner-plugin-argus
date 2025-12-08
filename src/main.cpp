@@ -52,7 +52,6 @@ struct ArgusState
 struct ThreadState
 {
 	b8                            poll             = false;
-	b8                            dataAvailable    = false;
 	u32                           lastCycleCounter = 0;
 	HANDLE                        thread           = nullptr;
 	const ArgusMonitorSensorData* waterSensor      = nullptr;
@@ -148,33 +147,33 @@ Argus_Thread_Update(void* lpParam)
 	{
 		defer { Sleep(250); };
 
-		if (!as.initialized)
-			Argus_Init(as);
+		if (!as.initialized && !Argus_Init(as))
+			continue;
 
 		// Handle Argus restarting (could change sensor layout)
-		ts.dataAvailable &= ts.lastCycleCounter <= as.data->CycleCounter;
-		if (!ts.dataAvailable)
+		b8 dataAvailable = as.data->Signature == 0x4D677241 && as.data->CycleCounter;
+		b8 dataReset = ts.lastCycleCounter > as.data->CycleCounter;
+		ts.lastCycleCounter = as.data->CycleCounter;
+		if (!dataAvailable || dataReset)
+			ts.waterSensor = nullptr;
+
+		if (dataAvailable && !ts.waterSensor)
 		{
-			ts.lastCycleCounter = as.data->CycleCounter;
-			ts.dataAvailable = as.data->Signature == 0x4D677241;
-			if (ts.dataAvailable)
+			WaitForSingleObject(as.dataMutex, INFINITE);
+			defer { ReleaseMutex(as.dataMutex); };
+
+			i32 sensorTypeIndex = SENSOR_TYPE_TEMPERATURE;
+			u32 sensorOffset    = as.data->OffsetForSensorType[sensorTypeIndex];
+			u32 sensorCount     = as.data->SensorCount[sensorTypeIndex];
+
+			for (u32 i = 0; i < sensorCount; ++i)
 			{
-				WaitForSingleObject(as.dataMutex, INFINITE);
-				defer { ReleaseMutex(as.dataMutex); };
-
-				i32 sensorTypeIndex = SENSOR_TYPE_TEMPERATURE;
-				u32 sensorOffset    = as.data->OffsetForSensorType[sensorTypeIndex];
-				u32 sensorCount     = as.data->SensorCount[sensorTypeIndex];
-
-				for (u32 i = 0; i < sensorCount; ++i)
+				// NOTE: We assume sensor data never changes layout while Argus is running
+				const ArgusMonitorSensorData& sensor = as.data->SensorData[sensorOffset + i];
+				if (wcscmp(sensor.Label, L"T Sensor") == 0)
 				{
-					// NOTE: We assume sensor data never changes layout while Argus is running
-					const ArgusMonitorSensorData& sensor = as.data->SensorData[sensorOffset + i];
-					if (wcscmp(sensor.Label, L"T Sensor") == 0)
-					{
-						ts.waterSensor = &sensor;
-						break;
-					}
+					ts.waterSensor = &sensor;
+					break;
 				}
 			}
 		}
