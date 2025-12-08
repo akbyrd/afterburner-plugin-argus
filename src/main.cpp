@@ -1,5 +1,6 @@
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
+#include <process.h>
 
 #include <argus/argus_monitor_data_api.h>
 #include <msi/MAHMSharedMemory.h>
@@ -110,7 +111,7 @@ Argus_Deinit(ArgusState& s)
 // -------------------------------------------------------------------------------------------------
 // Argus - Afterburner Integration
 
-static DWORD WINAPI Argus_Thread_Update(void* lpParam);
+static unsigned WINAPI Argus_Thread_Update(void* lpParam);
 static void Argus_Thread_Deinit(ThreadState& ts, ArgusState& as);
 
 static b8
@@ -120,21 +121,14 @@ Argus_Thread_Init(ThreadState& ts, ArgusState& as)
 	defer { if (!success) Argus_Thread_Deinit(ts, as); };
 
 	ts.poll = true;
-	ts.thread = CreateThread(
-		nullptr,
-		0,
-		static_cast<LPTHREAD_START_ROUTINE>(Argus_Thread_Update),
-		&state,
-		0,
-		nullptr
-	);
+	ts.thread = (HANDLE) _beginthreadex(nullptr, 0, &Argus_Thread_Update, &state, 0, nullptr);
 	if (!ts.thread) return false;
 
 	success = true;
 	return true;
 }
 
-static DWORD WINAPI
+static unsigned WINAPI
 Argus_Thread_Update(void* lpParam)
 {
 	State* s = static_cast<State*>(lpParam);
