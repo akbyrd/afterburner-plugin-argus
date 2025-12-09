@@ -53,6 +53,7 @@ struct ThreadState
 {
 	b8                            poll             = false;
 	u32                           lastCycleCounter = 0;
+	HMODULE                       module           = nullptr;
 	HANDLE                        thread           = nullptr;
 	const ArgusMonitorSensorData* waterSensor      = nullptr;
 };
@@ -119,15 +120,19 @@ Argus_Thread_Init(ThreadState& ts, ArgusState& as)
 	b8 success = false;
 	defer { if (!success) Argus_Thread_Deinit(ts, as); };
 
+	// TODO: It's unclear why we don't hit the same loader lock when the application is shutting down.
+
+	// NOTE: Afterburner appears to load plugins, query their sources, then release the module
+	// handle. Releasing the handle allows the modules to be unloaded. If our thread is running we'll
+	// crash because the code is unloaded. If we wait for our thread to exit we'll hit a loader lock.
+	// * Solution 1 - Signal the thread to exit but don't wait.
+	// * Solution 2 - Hold a reference to our own module to prevent unloading.
+	// * Solution 3 - Use _beginthreadex instead of CreateThread.
+	b8 result = GetModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS, (LPCWSTR) Argus_Thread_Update, &ts.module);
+	if (!result) return false;
+
 	ts.poll = true;
-	ts.thread = CreateThread(
-		nullptr,
-		0,
-		static_cast<LPTHREAD_START_ROUTINE>(Argus_Thread_Update),
-		&state,
-		0,
-		nullptr
-	);
+	ts.thread = CreateThread(nullptr, 0, Argus_Thread_Update, &state, 0, nullptr);
 	if (!ts.thread) return false;
 
 	success = true;
@@ -202,6 +207,7 @@ Argus_Thread_Deinit(ThreadState& ts, ArgusState& as)
 	ts.poll = false;
 	WaitForSingleObject(ts.thread, INFINITE);
 	CloseHandle(ts.thread);
+	FreeLibrary(ts.module);
 	ts = {};
 
 	Argus_Deinit(as);
